@@ -1,0 +1,30 @@
+div {
+    background-color: powderblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.pass{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.form{
+    border-width: 1px;
+    border-radius: 30px;
+    height: 35px;
+    width: 500px;
+    margin: 20px;
+    text-indent: 25px;
+}
+
+button{
+    border-radius: 30px;
+    border-style: hidden;
+    background-color: white;
+}
