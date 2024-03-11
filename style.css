@@ -1,10 +1,11 @@
+
 div {
-    background-color: powderblue;
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    height: fit-content;
+    margin-bottom: 50px;
     flex-direction: column;
 }
 
@@ -12,6 +13,7 @@ div {
     height: fit-content;
     display: flex;
     flex-direction: row;
+    margin-left: 19px;
 }
 
 .form{
@@ -23,8 +25,23 @@ div {
     text-indent: 25px;
 }
 
-button{
+#btn{
+    border-width: 2px;
     border-radius: 30px;
-    border-style: hidden;
-    background-color: white;
+    height: 35px;
+    width: 500px;
+    margin: 20px;
+    text-indent: 25px;
+    border-color: rgb(0, 208, 255);
+    color: rgb(0, 208, 255);
+}
+
+.heading{
+    display:flex;
+    align-items: flex-start;
+    height: 30px;
+    margin-top: 250px;
+    margin-left: 260px;
+    font-family: Helvetica;
+    font-weight: bold;
 }
