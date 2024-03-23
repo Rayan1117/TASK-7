@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="heading">
-        <h2>Login</h2>
-    </div>
-    <div>
-        <input class="form" id="email" placeholder="Email">
-        <div class="pass">
-            <input name="pwd" class="form" type="password" id="password" placeholder="Password" maxlength="40">
-            <img id="togglePassword" src="eye.png" height="20px" width="20px" onclick="togglePasswordVisibility()">
-        </div>
-        <button id="btn">Sign In</button>
+    <div class="container">
+        <form class="login-form">
+            <h2>Login</h2>
+            <div class="form-group">
+                <input id="email" class="form-input" type="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-with-toggle">
+                <input id="password" class="form-input" type="password" placeholder="Enter your password" required>
+                <span class="toggle-password" onclick="togglePasswordVisibility()">
+                    <img id="togglePassword" src="eye.png" alt="eye.png" height="20px" width="20px">
+                </span>
+            </div>
+            <button type="submit" id="btn">Sign In</button>
+        </form>
     </div>
     <script src="focus.js"></script>
 </body>
+
 </html>

@@ -1,47 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
 
-div {
-    background-color: rgb(255, 255, 255);
+div.container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: fit-content;
-    margin-bottom: 50px;
-    flex-direction: column;
+    height: 100vh;
 }
 
-.pass{
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    margin-left: 19px;
+.login-form {
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    width: 400px;
 }
 
-.form{
-    border-width: 1px;
-    border-radius: 30px;
-    height: 35px;
-    width: 500px;
-    margin: 20px;
-    text-indent: 25px;
+.form-group {
+    margin-bottom: 20px;
 }
 
-#btn{
-    border-width: 2px;
-    border-radius: 30px;
-    height: 35px;
-    width: 500px;
-    margin: 20px;
-    text-indent: 25px;
-    border-color: rgb(0, 208, 255);
-    color: rgb(0, 208, 255);
-}
-
-.heading{
-    display:flex;
-    align-items: flex-start;
-    height: 30px;
-    margin-top: 250px;
-    margin-left: 260px;
-    font-family: Helvetica;
+.form-group label {
+    display: block;
     font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+#btn {
+    background-color: #006aff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.input-with-toggle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-with-toggle input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.toggle-password {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.snackbar {
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+}
+
+.snackbar.show {
+    visibility: visible;
 }

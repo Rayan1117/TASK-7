@@ -1,7 +1,7 @@
 let passwordField = document.getElementById("password");
-document.addEventListener('DOMContentLoaded', function () {
     let emailField = document.getElementById("email");
     let button = document.getElementById("btn");
+document.addEventListener('DOMContentLoaded', function () {
 
     emailField.addEventListener("focus", function () {
         emailField.placeholder = "enter your email";
@@ -18,19 +18,37 @@ document.addEventListener('DOMContentLoaded', function () {
         passwordField.placeholder = "Password";
     })
     button.addEventListener("mouseover", function () {
-        button.style = "background-color:aliceblue"
+        button.style = "background-color:#0056b3"
     })
     button.addEventListener("mouseout", function () {
-        button.style = "background-color:white"
+        button.style = "background-color:#006aff"
     })
     button.addEventListener("click", function () {
-        button.style = "background-color:gray";
+        button.style = "background-color:#0056b3";
         setTimeout(() => {
-            button.style = "background-color:white";
-        }, 50);
+            button.style = "background-color:#006aff";
+        }, 100);
     })
 
-})
+    button.addEventListener("click", function (event) {
+        event.preventDefault();
+    
+        if (emailField.validity.valid && passwordField.validity.valid) {
+            var snackbar = document.createElement("div");
+            snackbar.className = "snackbar";
+            snackbar.textContent = "Login Successful";
+    
+            document.body.appendChild(snackbar);
+    
+            setTimeout(function() {
+                snackbar.remove();
+            }, 5000);
+        }
+    });
+    
+    
+    
+});
 
 function togglePasswordVisibility() {
     var toggleIcon = document.getElementById("togglePassword");
