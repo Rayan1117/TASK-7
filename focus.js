@@ -45,9 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }, 5000);
         }
     });
-    
-    
-    
 });
 
 function togglePasswordVisibility() {
